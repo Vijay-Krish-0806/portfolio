@@ -24,7 +24,7 @@ export default function ContactForm() {
     setSubmitStatus("");
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -72,13 +72,7 @@ export default function ContactForm() {
           </div>
         )}
 
-        {/* Hidden form for Netlify detection */}
-        <div style={{ display: "none" }}>
-          <input type="text" name="name" />
-          <input type="email" name="email" />
-          <input type="text" name="subject" />
-          <textarea name="message"></textarea>
-        </div>
+        {/* The hidden form is already in index.html */}
 
         <div className="space-y-6">
           <div>
