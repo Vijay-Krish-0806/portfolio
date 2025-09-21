@@ -695,7 +695,13 @@ const Portfolio = () => {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                netlify
+                data-netlify="true"
+                name="contact"
+                onSubmit={handleSubmit}
+                className="space-y-6"
+              >
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-zinc-300 mb-2">
